@@ -1,2 +1,0 @@
-# Kennect-Inc
-Assignment

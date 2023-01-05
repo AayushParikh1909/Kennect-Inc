@@ -1,0 +1,17 @@
+<html>
+<body>
+<h2>JavaScript Closures</h2>
+<button type="button" onclick="myFunction()">Subtract</button>
+<p id="closure">10</p>
+<script>
+const add = (function () {
+  let counter = 10;
+  return function () {counter -= 1; return counter;}
+})();
+
+function myFunction(){
+  document.getElementById("closure").innerHTML = add();
+}
+</script>
+</body>
+</html>
